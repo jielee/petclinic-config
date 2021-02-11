@@ -1,6 +1,9 @@
 bases:
 - ../base
 
+patchesStrategicMerge:
+  - patches/petclinic-deployment-replicas-override.yaml
+
 images:
 - name: quay.io/dsanchor/quarkus-petclinic
   newTag: 1.0.0
